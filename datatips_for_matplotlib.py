@@ -1,9 +1,7 @@
 from matplotlib import pyplot
 
-# img_location = input('Enter the location of the image:\n')
-# img_name = input('What do you want the image to be called ?\n')
-img_location = './BasicImageImportProcessingAndExportExample_03.png'
-img_name = 'test'
+img_location = input('Enter the location of the image:\n')
+img_name = input('What do you want the image to be called ?\n')'
 
 img = pyplot.imread(img_location)
 
