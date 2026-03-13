@@ -2,16 +2,6 @@
 
 An interactive Python utility built with Matplotlib for analyzing images. This tool allows you to inspect specific pixels, identify coordinates, and retrieve precise RGBA color values through mouse and keyboard interaction.
 
-## ⚖️ Licensing & Attribution
-
-This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
-
-**Will I get credit?** Yes. Under the terms of the GPL:
-
-1. **Preservation of Notices:** Anyone who redistributes this code (modified or original) **must** keep your copyright notices and the license intact.
-2. **Derivative Works:** If someone incorporates your code into a larger project, they must acknowledge the original source.
-3. **Attribution:** While the GPL focus is on keeping the software free, it is standard practice (and legally required via copyright preservation) that your name remains attached to the source code as the author.
-
 ## ✨ Features
 
 - **Live Hover Inspection:** Real-time RGBA and coordinate overlay as you move the cursor.
@@ -43,7 +33,7 @@ pip install matplotlib
    - **Mouse Move:** Hover over any part of the image to see live pixel data.
    - **Left Click:** Place a persistent red crosshair (+) on a pixel. Click the crosshair again to remove it.
    - **Arrow Keys (Up/Down/Left/Right):** Shift the selection by exactly one pixel for fine-tuning.
-   - **'H' Key:** Hide the cursor and clear all active annotations for a clean view.
+   - **'H' Key:** Toggle the hover details.
 
 ## 📂 Project Structure
 
