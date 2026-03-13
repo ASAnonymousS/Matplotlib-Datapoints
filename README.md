@@ -23,7 +23,7 @@ pip install matplotlib
 1. **Start the Script:** Run the Python file.
 
    ```
-   python inspector.py
+   python datatips_for_matplotlib.py
    ```
 
 2. **Load Image:** When prompted, enter the file path to your image (e.g., `images/sample.png`).
