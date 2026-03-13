@@ -37,7 +37,7 @@ pip install matplotlib
 
 ## 📂 Project Structure
 
-- `inspector.py`: The main Python script.
+- `datatips_for_matplotlib.py`: The main Python script.
 - `README.md`: Project documentation.
 - `LICENSE`: The GNU GPL v3.0 license text.
 
