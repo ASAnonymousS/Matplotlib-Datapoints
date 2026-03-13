@@ -43,7 +43,7 @@ pip install matplotlib
    - **Mouse Move:** Hover over any part of the image to see live pixel data.
    - **Left Click:** Place a persistent red crosshair (+) on a pixel. Click the crosshair again to remove it.
    - **Arrow Keys (Up/Down/Left/Right):** Shift the selection by exactly one pixel for fine-tuning.
-   - **'H' Key:** Hide the cursor and clear all active annotations for a clean view.
+   - **'H' Key:** Toggle the hover details.
 
 ## 📂 Project Structure
 

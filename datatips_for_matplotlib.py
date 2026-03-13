@@ -15,6 +15,7 @@ canvas.set_title(f"{img_name}'s Resolution = {image_x} x {image_y}")
 cursor,*_ = canvas.plot(0, 0, 'r+', markersize = 25, markeredgewidth = 2, visible = False)
 cursor_x = cursor.get_xdata()[0]
 cursor_y = cursor.get_ydata()[0]
+detail = True
 
 
 details = canvas.annotate('',(0,0))
@@ -24,6 +25,7 @@ def on_key(event):
     global cursor_x
     global cursor_y
     global details
+    global detail
     if event.key == 'up':
         cursor_y = max(0,cursor_y-1)
     elif event.key == 'down':
@@ -33,7 +35,7 @@ def on_key(event):
     elif event.key == 'right':
         cursor_x = min(image_x-1,cursor_x+1)
     elif event.key in {'h','H'}:
-        cursor.set_visible(False)
+        detail = not detail
         try:
             details.remove()
         except:
@@ -59,7 +61,7 @@ def on_click(event):
                 cursor_y_details = int(event.ydata)
                 cursor.set_visible(not cursor.get_visible())
             else:
-                if abs(cursor_x_details - event.xdata) <= image_y//250 and abs(cursor_y_details - event.ydata) <= image_x//250:
+                if abs(cursor_x_details - event.xdata) <= max(image_y//250,2) and abs(cursor_y_details - event.ydata) <= max(image_x//250,2):
                     cursor.set_visible(False)
                     try:
                         details_click.remove()
@@ -83,7 +85,7 @@ def on_hover(event):
     global cursor_x
     global cursor_y
     global details
-    if event.inaxes:
+    if event.inaxes and detail:
         cursor_x = int(event.xdata)
         cursor_y = int(event.ydata)
         try:
